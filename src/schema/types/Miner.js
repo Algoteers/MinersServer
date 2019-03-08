@@ -9,12 +9,14 @@ const MinerType = new GraphQLObjectType({
   name: 'Miner',
   fields: () => ({
     id: { type: GraphQLID },
-    minerType: { type: GraphQLString },
-    minerState: { type: GraphQLString },
+    address: { type: GraphQLString },
+    type: { type: GraphQLString },
+    state: { type: GraphQLString },
     category: { type: GraphQLString },
-    minerAccountAddress: { type: GraphQLString },
-    referralAccountAddress: { type: GraphQLString },
-    minerBalance: { type: GraphQLFloat },
+    assignedMinerAddress: { type: GraphQLString },
+    assignedReferralAddress: { type: GraphQLString },    
+    name: { type: GraphQLString },
+    authId: { type: GraphQLString },
   }),
 });
 

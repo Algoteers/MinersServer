@@ -3,16 +3,16 @@ import { MinerTypeEnum } from '../enums/MinerType';
 import { MinerStateEnum } from '../enums/MinerState';
 
 const minerSchema = new Schema({
-  authId: {
+  address: {
     type: String,
     required: true,
   },
-  minerType: {
+  type: {
     type: String,
     enum: MinerTypeEnum,
     required: true,
   },
-  minerState: {
+  state: {
     type: String,
     enum: MinerStateEnum,
     required: true,
@@ -21,17 +21,19 @@ const minerSchema = new Schema({
     type: String,
     required: true,
   },
-  minerAccountAddress: {
+  assignedMinerAddress: {
     type: String,
     required: true,
   },
-  referralAccountAddress: {
+  assignedReferralAddress: {
     type: String,
     required: true,
+  },  
+  name: {
+    type: String,
   },
-  minerBalance: {
-    type: Number,
-    required: true,
+  authId: {
+    type: String
   },
 });
 

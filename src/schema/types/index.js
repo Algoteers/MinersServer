@@ -1,4 +1,4 @@
-import MinerType from './Miner';
+import MinerType from './miner';
 
 export {
   MinerType
