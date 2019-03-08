@@ -20,7 +20,7 @@ const resolve = (parent, args, context) => {
 }
 
 const query = {
-  miners: {
+  minersByUser: {
     type: new GraphQLList(MinerType),
     args,
     resolve,
