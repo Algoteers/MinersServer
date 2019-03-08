@@ -20,10 +20,10 @@ class ServerError extends Error {
   }
 }
 
-export class AuthentificationError extends ClientError {
+export class AuthenticationError extends ClientError {
   code = 401
 
-  message = 'Autentification not found, you have to be authentificated to perform this action'
+  message = 'Authentication not found, you have to be authenticated to perform this action'
 }
 
 export class DatabaseError extends ClientError {
